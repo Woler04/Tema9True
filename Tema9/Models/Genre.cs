@@ -12,5 +12,11 @@ namespace Tema9.Models
         [ForeignKey("Author")]
         public int? AuthorId { get; set; }
         public virtual Author? Author { get; set; }
+
+        public override string ToString()
+        {
+            return this.Title;
+        }
     }
+    
 }
