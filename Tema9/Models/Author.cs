@@ -10,5 +10,11 @@ namespace Tema9.Models
         public string Description { get; set; }
         public virtual ICollection<Book?> Books { get; set; }
         public virtual ICollection<Genre?> Genres { get; set; }
+
+        public Author()
+        {
+            Books = new List<Book?>();
+            Genres = new List<Genre?>();
+        }
     }
 }
